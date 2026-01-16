@@ -1,0 +1,19 @@
+{
+  "name": "ppams-project-website",
+  "version": "1.0.0",
+  "description": "Posture Pillow Attachment Monitoring System - Bachelor's Senior Project Website - Ilia State University",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": ["bachelor-project", "ppams", "ilia-state-university", "senior-project"],
+  "author": "Ilia State University Students",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
