@@ -23,17 +23,10 @@
 
     <nav class="navbar">
         <div class="container">
-            <button class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links" id="navLinks">
+            <ul class="nav-links">
                 <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#presentation">Presentation</a></li>
-                <li><a href="#proposal">Proposal</a></li>
-                <li><a href="#report">Final Report</a></li>
+                <li><a href="#documentation">Documentation</a></li>
+                <li><a href="#results">Results</a></li>
                 <li><a href="#team">Team</a></li>
             </ul>
         </div>
@@ -60,14 +53,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About the Project</h2>
-            
-            <div class="about-grid">
+            <!-- About content integrated into Home -->
+            <div class="about-grid" style="margin-top: 4rem;">
                 <div class="about-card">
                     <h3>Introduction</h3>
                     <p>In today's academic and professional environments, many spend extended periods seated, gradually developing poor posture without being consciously aware of it. Our P.P.A.M.S addresses this common problem by combining comfort, technology, and smart feedback. It transforms any ordinary chair into a posture aware system that helps users develop healthier sitting habits through continuous observation and simple feedback mechanisms.</p>
@@ -79,7 +67,7 @@
                 </div>
             </div>
 
-            <div class="features-section">
+            <div class="features-section" style="margin-top: 3rem;">
                 <h3>Key Features</h3>
                 <div class="features-grid">
                     <div class="feature-card">
@@ -111,85 +99,86 @@
         </div>
     </section>
 
-    <section id="presentation" class="section alt-bg">
+    <section id="documentation" class="section alt-bg">
         <div class="container">
-            <h2 class="section-title">Project Presentation</h2>
-            <p class="section-subtitle">Visual overview and demonstration materials</p>
-            
-            <div class="presentation-grid">
-                <div class="presentation-item">
-                    <div class="image-placeholder">
-                        <img src="/images/image2.png" alt="image2">
+            <h2 class="section-title">Documentation</h2>
+            <p class="section-subtitle">Project proposal, methodology, and presentation materials</p>
+
+            <!-- Presentation Materials -->
+            <div style="margin-bottom: 4rem;">
+                <h3 style="margin-bottom: 2rem;">Presentation Materials</h3>
+                <div class="presentation-grid">
+                    <div class="presentation-item">
+                        <div class="image-placeholder">
+                            <img src="/images/image2.png" alt="image2">
+                        </div>
+                        <div class="presentation-caption">
+                            <p>System architecture showing microcontroller, pressure sensors, feedback mechanisms, battery, and mobile application interface</p>
+                        </div>
                     </div>
-                    <div class="presentation-caption">
-                        <p>System architecture showing microcontroller, pressure sensors, feedback mechanisms, battery, and mobile application interface</p>
+
+                    <div class="presentation-item">
+                        <div class="image-placeholder">
+                            <img src="/images/image3.png" alt="image3">
+                        </div>
+                        <div class="presentation-caption">
+                            <p>Hardware components including embedded sensors in back pillow and seat drape, microcontroller unit, and power system</p>
+                        </div>
+                    </div>
+
+                    <div class="presentation-item">
+                        <div class="image-placeholder">
+                            <img src="/images/image4.png" alt="image4" style="max-width: 70%; height: auto; width: 500px;">
+                        </div>
+                        <div class="presentation-caption">
+                            <p>Prototype Version of the chair attachment</p>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="presentation-item">
-                    <div class="image-placeholder">
-                        <img src="/images/image3.png" alt="image3">
+            <!-- Proposal Content -->
+            <div>
+                <h3 style="margin-bottom: 2rem;">Project Proposal</h3>
+                <div class="proposal-grid">
+                    <div class="proposal-box">
+                        <div class="box-number">01</div>
+                        <h3>Problem Statement</h3>
+                        <p>Prolonged sitting in modern academic and professional settings leads to gradual development of poor posture without conscious awareness. This results in muscle strain, spinal problems, and reduced comfort. Existing solutions often require expensive ergonomic furniture or lack real time feedback mechanisms. There is a need for an affordable, portable system that provides immediate posture awareness and behavioral correction without disrupting work.</p>
                     </div>
-                    <div class="presentation-caption">
-                        <p>Hardware components including embedded sensors in back pillow and seat drape, microcontroller unit, and power system</p>
-                    </div>
-                </div>
 
-                <div class="presentation-item">
-                    <div class="image-placeholder">
-                        <img src="/images/image4.png" alt="image4" style="max-width: 70%; height: auto; width: 500px;">
+                    <div class="proposal-box">
+                        <div class="box-number">02</div>
+                        <h3>Research Objectives</h3>
+                        <p>Develop a functional embedded sensing system that accurately detects posture deviations through pressure distribution analysis. Implement personalized calibration that adapts to individual body types and preferences. Create effective nonintrusive feedback mechanisms that encourage posture correction. Design a portable, modular attachment compatible with standard chairs. Validate system effectiveness through real world testing and user studies.</p>
                     </div>
-                    <div class="presentation-caption">
-                        <p>Prototype Version of the chair attachment</p>
+
+                    <div class="proposal-box">
+                        <div class="box-number">03</div>
+                        <h3>Methodology</h3>
+                        <p>Hardware selection includes pressure sensors, microcontroller, vibration motors, buzzer, and rechargeable battery. Sensor calibration involves establishing personalized baselines during initial use. Software development covers signal processing algorithms to filter noise and detect sustained deviations. Mobile application development provides user interface for calibration and monitoring. System integration ensures seamless communication between hardware and software components. Testing methodology includes controlled experiments and real world user trials.</p>
+                    </div>
+
+                    <div class="proposal-box">
+                        <div class="box-number">04</div>
+                        <h3>Milestones</h3>
+                        <p>Phase 1: Requirements analysis and component selection. Phase 2: Hardware assembly and sensor integration. Phase 3: Microcontroller programming and signal processing implementation. Phase 4: Mobile application development and system integration. Phase 5: Testing, refinement, and user validation. Phase 6: Documentation, final presentation, and project delivery.</p>
+                    </div>
+
+                    <div class="proposal-box">
+                        <div class="box-number">05</div>
+                        <h3>Expectations </h3>
+                        <p>This project will provide a solution for posture awareness in educational and office environments. Users will develop healthier sitting habits through continuous feedback and behavioral reinforcement. The modular design allows for future enhancements and customization. Research findings will contribute to understanding of sensor-based posture detection and feedback effectiveness. The system demonstrates practical application of embedded systems, signal processing, and human-computer interaction principles.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="proposal" class="section">
+    <section id="results" class="section">
         <div class="container">
-            <h2 class="section-title">Project Proposal</h2>
-            <p class="section-subtitle">Research objectives and methodology</p>
-
-            <div class="proposal-grid">
-                <div class="proposal-box">
-                    <div class="box-number">01</div>
-                    <h3>Problem Statement</h3>
-                    <p>Prolonged sitting in modern academic and professional settings leads to gradual development of poor posture without conscious awareness. This results in muscle strain, spinal problems, and reduced comfort. Existing solutions often require expensive ergonomic furniture or lack real time feedback mechanisms. There is a need for an affordable, portable system that provides immediate posture awareness and behavioral correction without disrupting work.</p>
-                </div>
-
-                <div class="proposal-box">
-                    <div class="box-number">02</div>
-                    <h3>Research Objectives</h3>
-                    <p>Develop a functional embedded sensing system that accurately detects posture deviations through pressure distribution analysis. Implement personalized calibration that adapts to individual body types and preferences. Create effective nonintrusive feedback mechanisms that encourage posture correction. Design a portable, modular attachment compatible with standard chairs. Validate system effectiveness through real world testing and user studies.</p>
-                </div>
-
-                <div class="proposal-box">
-                    <div class="box-number">03</div>
-                    <h3>Methodology</h3>
-                    <p>Hardware selection includes pressure sensors, microcontroller, vibration motors, buzzer, and rechargeable battery. Sensor calibration involves establishing personalized baselines during initial use. Software development covers signal processing algorithms to filter noise and detect sustained deviations. Mobile application development provides user interface for calibration and monitoring. System integration ensures seamless communication between hardware and software components. Testing methodology includes controlled experiments and real world user trials.</p>
-                </div>
-
-                <div class="proposal-box">
-                    <div class="box-number">04</div>
-                    <h3>Milestones</h3>
-                    <p>Phase 1: Requirements analysis and component selection. Phase 2: Hardware assembly and sensor integration. Phase 3: Microcontroller programming and signal processing implementation. Phase 4: Mobile application development and system integration. Phase 5: Testing, refinement, and user validation. Phase 6: Documentation, final presentation, and project delivery.</p>
-                </div>
-
-                <div class="proposal-box">
-                    <div class="box-number">05</div>
-                    <h3>Expectations </h3>
-                    <p>This project will provide a solution for posture awareness in educational and office environments. Users will develop healthier sitting habits through continuous feedback and behavioral reinforcement. The modular design allows for future enhancements and customization. Research findings will contribute to understanding of sensor-based posture detection and feedback effectiveness. The system demonstrates practical application of embedded systems, signal processing, and human-computer interaction principles.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="report" class="section alt-bg">
-        <div class="container">
-            <h2 class="section-title">Final Project Report</h2>
-            <p class="section-subtitle">Comprehensive documentation and results</p>
+            <h2 class="section-title">Results</h2>
+            <p class="section-subtitle">Comprehensive documentation and findings</p>
 
             <div class="report-container">
                 <div class="report-sidebar">
@@ -200,7 +189,6 @@
                             <li><a href="#report-intro">Introduction</a></li>
                             <li><a href="#report-design">System Design</a></li>
                             <li><a href="#report-implementation">Implementation</a></li>
-                            <!-- <li><a href="#report-testing">Testing & Results</a></li> -->
                             <li><a href="#report-conclusion">Conclusion</a></li>
                             <li><a href="#report-references">References</a></li>
                         </ul>
@@ -242,17 +230,6 @@
                         </div>
                     </div>
 
-                    <!-- <div class="report-section" id="report-testing">
-                        <h3>Testing & Results</h3>
-                        <p>Testing was conducted in three phases: component validation, integrated system testing, and user trials. Component testing verified sensor accuracy, microcontroller performance, feedback mechanism functionality, and battery life. All components met design specifications with acceptable margins.</p>
-                        <p>Integrated testing evaluated the complete system under various conditions. Test subjects were asked to maintain correct posture, then adopt common poor posture positions including slouching, leaning, and asymmetric sitting. The system successfully detected all deliberate posture deviations within acceptable time windows, typically 15-30 seconds of sustained poor posture.</p>
-                        <p>User trials involved participants using the system during normal study or work sessions over multiple days. Feedback indicated that alerts were noticeable and prompted posture correction without being disruptive. Participants reported increased awareness of their sitting habits and gradual improvement in maintaining better posture even without active feedback.</p>
-                        <p>Quantitative analysis showed detection accuracy above 85% for significant posture deviations. False positive rates remained below 10%, primarily occurring during intentional position changes. Battery life exceeded 8 hours of continuous operation, meeting the full-day usage requirement. Mobile app connectivity maintained stable communication throughout testing periods.</p>
-                        <div class="image-placeholder">
-                            <img src="/images/image8.png" alt="image8">
-                        </div>
-                    </div> -->
-
                     <div class="report-section" id="report-conclusion">
                         <h3>Conclusion & Future Work</h3>
                         <p>The P.P.A.M.S. project successfully demonstrates a practical approach to posture awareness and behavioral correction through embedded sensing and feedback. The system achieves its primary objectives of detecting poor posture, providing immediate feedback, and encouraging healthier sitting habits in a portable package.</p>
@@ -266,44 +243,42 @@
                         <p>[1] STM32F4 Discovery Board Datasheet, STMicroelectronics, [Online]</p>
                         <p>[2] ESP32-DevKitC V4 Datasheet, Espressif Systems, [Online]</p>
                         <p>[3] Interlink Electronics, FSR™ Integration Guide, Document 94-00004 Rev B, 2023. [Online]</p>
-                        <!-- <p>[4]</p> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="team" class="section">
+    <section id="team" class="section alt-bg">
         <div class="container">
             <h2 class="section-title">Project Team</h2>
             <p class="section-subtitle">Ilia State University - Bachelor's Program</p>
 
+            <div class="team-grid">
+                <div class="team-member">
+                    <h3>Jambuli Chkhikvadze</h3>
+                    <p class="member-email">jambuli.chkhikvadze.1@iliauni.edu.ge</p>
+                    <div class="member-photo">
+                        <img src="/images/jp.png" alt="Jambuli Chkhikvadze" style="max-width: 100%; height: auto; width: 200px; padding: 5px;" onerror="this.style.display='none'; this.parentElement.classList.add('no-image');">
+                    </div>
+                </div>
 
-                    <div class="team-grid">
-            <div class="team-member">
-                <h3>Jambuli Chkhikvadze</h3>
-                <p class="member-email">jambuli.chkhikvadze.1@iliauni.edu.ge</p>
-                <div class="member-photo">
-                    <img src="/images/jp.png" alt="Jambuli Chkhikvadze" style="max-width: 100%; height: auto; width: 200px; padding: 5px;" onerror="this.style.display='none'; this.parentElement.classList.add('no-image');">
+                <div class="team-member">
+                    <h3>Samir Mansour</h3>
+                    <p class="member-email">samir.mansour.1@iliauni.edu.ge</p>
+                    <div class="member-photo">
+                        <img src="/images/sp.png" alt="Samir Mansour" style="max-width: 100%; height: auto; width: 200px; padding: 5px;" onerror="this.style.display='none'; this.parentElement.classList.add('no-image');">
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <h3>Giorgi Erkomaishvili</h3>
+                    <p class="member-email">giorgi.erkomaishvili.1@iliauni.edu.ge</p>
+                    <div class="member-photo">
+                        <img src="/images/gp.png" alt="Giorgi Erkomaishvili" style="max-width: 100%; height: auto; width: 200px; padding: 5px;" onerror="this.style.display='none'; this.parentElement.classList.add('no-image');">
+                    </div>
                 </div>
             </div>
-
-            <div class="team-member">
-                <h3>Samir Mansour</h3>
-                <p class="member-email">samir.mansour.1@iliauni.edu.ge</p>
-                <div class="member-photo">
-                    <img src="/images/sp.png" alt="Samir Mansour" style="max-width: 100%; height: auto; width: 200px; padding: 5px;" onerror="this.style.display='none'; this.parentElement.classList.add('no-image');">
-                </div>
-            </div>
-
-            <div class="team-member">
-                <h3>Giorgi Erkomaishvili</h3>
-                <p class="member-email">giorgi.erkomaishvili.1@iliauni.edu.ge</p>
-                <div class="member-photo">
-                    <img src="/images/gp.png" alt="Giorgi Erkomaishvili" style="max-width: 100%; height: auto; width: 200px; padding: 5px;" onerror="this.style.display='none'; this.parentElement.classList.add('no-image');">
-                </div>
-            </div>
-        </div>
 
             <div class="supervisor-section">
                 <h3>Academic Supervisors</h3>
@@ -344,7 +319,6 @@
         </div>
     </footer>
 
-    <!-- Image Modal -->
     <div id="imageModal" class="image-modal">
         <span class="modal-close">&times;</span>
         <img class="modal-content" id="modalImage">
@@ -357,26 +331,6 @@
     </div>
 
     <script>
-        // Hamburger Menu Toggle
-        const navToggle = document.getElementById('navToggle');
-        const navLinks = document.getElementById('navLinks');
-        
-        if (navToggle) {
-            navToggle.addEventListener('click', function() {
-                navToggle.classList.toggle('active');
-                navLinks.classList.toggle('active');
-            });
-        }
-        
-        // Close menu when a link is clicked
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', function() {
-                navToggle.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
-        });
-
-        // Smooth scroll for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -387,7 +341,6 @@
             });
         });
 
-        // Active navigation highlighting
         window.addEventListener('scroll', () => {
             let current = '';
             document.querySelectorAll('section').forEach(section => {
@@ -404,8 +357,6 @@
                 }
             });
         });
-
-        // Image Modal Functionality
         document.addEventListener('DOMContentLoaded', function() {
             const modal = document.getElementById('imageModal');
             const modalImg = document.getElementById('modalImage');
@@ -416,13 +367,11 @@
             const zoomResetBtn = document.getElementById('zoomReset');
             let currentZoom = 1;
 
-            // Check if modal elements exist
             if (!modal || !modalImg || !modalCaption || !closeBtn) {
                 console.error('Modal elements not found');
                 return;
             }
 
-            // Make all images clickable
             const clickableImages = document.querySelectorAll('.image-placeholder img, .university-logo-main img, .university-logo-footer img, .member-photo-placeholder img');
             
             clickableImages.forEach(img => {
@@ -437,14 +386,12 @@
                     modalImg.style.transform = `translate(-50%, -50%) scale(${currentZoom})`;
                     modalImg.style.cursor = 'grab';
                     
-                    // Get caption if exists
                     const caption = this.closest('.presentation-item')?.querySelector('.presentation-caption p')?.textContent ||
                                   this.alt || '';
                     modalCaption.textContent = caption;
                 });
             });
 
-            // Close modal
             if (closeBtn) {
                 closeBtn.addEventListener('click', function() {
                     modal.style.display = 'none';
@@ -459,7 +406,6 @@
                 });
             }
 
-            // Zoom controls
             if (zoomInBtn) {
                 zoomInBtn.addEventListener('click', function() {
                     currentZoom += 0.2;
@@ -485,7 +431,6 @@
                 });
             }
 
-            // Keyboard controls
             document.addEventListener('keydown', function(e) {
                 if (modal && modal.style.display === 'block') {
                     if (e.key === 'Escape') {
@@ -500,7 +445,6 @@
                 }
             });
 
-            // Mouse wheel zoom
             if (modalImg) {
                 modalImg.addEventListener('wheel', function(e) {
                     e.preventDefault();
@@ -512,7 +456,6 @@
                 });
             }
 
-            // Drag to pan when zoomed
             let isDragging = false;
             let startX, startY;
             let translateX = 0;
@@ -542,11 +485,9 @@
                     if (modalImg) modalImg.style.cursor = 'grab';
                 });
 
-                // Update cursor style when hovering
                 modalImg.style.cursor = 'grab';
             }
 
-            // Reset translation when zoom changes
             const originalZoomIn = zoomInBtn.onclick;
             if (zoomInBtn) {
                 zoomInBtn.onclick = function() {
